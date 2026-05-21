@@ -45,7 +45,7 @@ passport.deserializeUser(function(user, done){
 /*
  *  Express Project Setup
 */
-app.use(sesion({
+app.use(session({
   secret: 'codecademy',
   resave: false,
   saveUninitialized: false
