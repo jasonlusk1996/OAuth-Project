@@ -80,7 +80,7 @@ app.get('/logout', (req, res) => {
   res.redirect('/');
 });
 
-
+app.get('/auth/github', passport.authenticate('github', {scope: []}));
 
 
 /*
